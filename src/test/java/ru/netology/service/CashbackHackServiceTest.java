@@ -5,27 +5,27 @@ public class CashbackHackServiceTest {
 
 
     @org.junit.Test
-    public void testRemainBoundaryValuesTwo() {
+    public void testRemainBoundaryValuesOne() {
         org.junit.Assert.assertEquals(service.remain(0), 1000);
     }
 
     @org.junit.Test
-    public void testRemainBoundaryValuesThree() {
+    public void testRemainBoundaryValuesTwo() {
         org.junit.Assert.assertEquals(service.remain(1), 999);
     }
 
     @org.junit.Test
-    public void testRemainBoundaryValuesFour() {
+    public void testRemainBoundaryValuesThree() {
         org.junit.Assert.assertEquals(service.remain(999), 1);
     }
 
     @org.junit.Test
-    public void testRemainBoundaryValuesFive() {
+    public void testRemainBoundaryValuesFour() {
         org.junit.Assert.assertEquals(service.remain(1000), 0);
     }
 
     @org.junit.Test
-    public void testRemainBoundaryValuesSix() {
+    public void testRemainBoundaryValuesFive() {
         org.junit.Assert.assertEquals(service.remain(1001), 999);
     }
 
