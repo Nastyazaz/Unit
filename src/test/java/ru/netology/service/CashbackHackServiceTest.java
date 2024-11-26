@@ -5,23 +5,27 @@ public class CashbackHackServiceTest {
 
 
     @org.testng.annotations.Test
-    public void testRemainBoundaryValuesTwo() {
+    public void testRemainBoundaryValuesOne () {
         org.testng.Assert.assertEquals(service.remain(0), 1000);
     }
 
     @org.testng.annotations.Test
-    public void testRemainBoundaryValuesThree() {
+    public void testRemainBoundaryValuesTwo () {
         org.testng.Assert.assertEquals(service.remain(1), 999);
     }
 
     @org.testng.annotations.Test
-    public void testRemainBoundaryValuesFour() {
+    public void testRemainBoundaryValuesThree() {
         org.testng.Assert.assertEquals(service.remain(999), 1);
     }
 
+    @org.testng.annotations.Test
+    public void testRemainBoundaryValuesFour() {
+        org.testng.Assert.assertEquals(service.remain(1000), 0);
+    }
 
     @org.testng.annotations.Test
-    public void testRemainBoundaryValuesSix() {
+    public void testRemainBoundaryValuesFive() {
         org.testng.Assert.assertEquals(service.remain(1001), 999);
     }
 
